@@ -1,6 +1,6 @@
-function createCSV(){
+let createCSV = () =>{
     console.log( 'in createCSV' );
-    var csvString = '';
+    let csvString = '';
     csvString += document.getElementById( 'input0' ).value + ',';
     csvString += document.getElementById( 'input1' ).value + ',';
     csvString += document.getElementById( 'input2' ).value + ',';
@@ -13,8 +13,8 @@ function createCSV(){
     downloadCsv( csvString, 'test.csv' );
 }
 
-function downloadCsv( string, fileName ) {  
-    var data = encodeURI( 'data:text/csv;charset=utf-8,' + string );
+let downloadCsv = ( string, fileName ) => {  
+    let data = encodeURI( 'data:text/csv;charset=utf-8,' + string );
     link = document.createElement( 'a' );
     link.setAttribute( 'href', data );
     link.setAttribute( 'download', fileName );
