@@ -3,7 +3,7 @@ Create CSV Example
 
 A quick example of creating a CSV spreadsheet file from a string in javascript.
 
-Send the following functiona string to convert to CSV and a filename. The file will automatically be created and downlaoded automatically.
+Send the following function a string to convert to CSV and a filename. The file will automatically be created and downloaded.
 
 ```
 let downloadCsv = ( string, fileName ) => {  
